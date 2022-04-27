@@ -1,0 +1,188 @@
+/* External CSS page */
+
+/* Adding custom fonts */
+@font-face {
+  font-family: "Great Wishes";
+  src: url(../fonts/great_wishes-webfont.woff);
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(../fonts/montserrat-bold-webfont.woff);
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+/* Default stylying for the body */
+body {
+  margin: 0px;
+
+  background-color: #dad7cd;
+}
+
+/* Default styling for the header */
+header {
+  background-color: #588157;
+  text-align: center;
+}
+
+/* Default styling for the navigation menu */
+nav {
+  padding: 20px 0px;
+}
+
+/* Default styling for the h1 tag - mainly used at the top of the webpage (ex: About, Contact, Catering) */
+h1 {
+  color: #2d422c;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Roboto Slab";
+  margin-bottom: 5px;
+}
+
+/* The default styling for a paragraph tag - main text on the website */
+p {
+  color: #2d422c;
+  font-size: 18px;
+  font-family: "Roboto";
+  /* This padding is to make sure the paragraph text not start from the edge of the window */
+  padding: 0px 70px;
+}
+
+/* Styling for hr tag to be rounded, green, and a solid line underneath every heading of a page */
+hr {
+  border: 5px solid #588157;
+  /* Making the ends rounded */
+  border-radius: 5px;
+
+  width: 50%;
+
+  /* Centering the line */
+  margin: auto;
+}
+
+/* Styling the div tag used as a container to style the form */
+div {
+  margin: 0px 70px;
+  color: #2d422c;
+  font-size: 18px;
+}
+
+/* Default styling the inputs and the textarea */
+input,
+textarea {
+  /* Making it the full width of the form */
+  width: 100%;
+
+  font-size: 17px;
+
+  /* Adding padding within the input */
+  padding: 7px 20px;
+
+  /* Adding margin (spacing) to make it less condensed */
+  margin: 8px 0px;
+
+  /* Including padding into the total width of the element. If it's not added the input will be bigger than the width of the form */
+  box-sizing: border-box;
+
+  /* Changing size of border */
+  border: 1px solid;
+  /* Rounded corners */
+  border-radius: 5px;
+
+  background-color: #dad7cd;
+}
+
+input[type="radio"] {
+  /* Styling radio buttons to only take up as little width as possible - don't want to stretch the radio buttons */
+  width: min-content;
+}
+
+input[type="date"] {
+  /* Styling the date input to make it take as little width as possible, this makes it easier for the user to click the calendar icon and select a date */
+  width: min-content;
+}
+
+/* Styling the submit button */
+input[type="submit"] {
+  background-color: #588157;
+  color: white;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 5px;
+
+  font-family: "Roboto";
+  font-size: 16px;
+
+  padding: 12px 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  /* Duration for transitions (i.e., change of colour when hovered) */
+  transition-duration: 0.4s;
+}
+
+/* Styling the submit button when hovered */
+input[type="submit"]:hover {
+  background-color: #2d422c;
+}
+
+/* Class for styling the anchor tags in the navigation bar */
+.nav-link {
+  padding: 20px;
+  color: #dad7cd;
+  font-family: "Montserrat Bold";
+  font-size: 20px;
+  /* Length of the transition for when it's hovered */
+  transition-duration: 0.4s;
+}
+
+/* Descendant selector to style all list items that are in the nav-link class elements. */
+.nav-link li {
+  display: inline-block;
+}
+
+/* Styling for when an item in the navigation bar gets hovered */
+.nav-link:hover {
+  background-color: #6a9969;
+}
+
+/* Class to style the disclaimer text informing user not to submit any personal or sensitive information */
+.disclaimer-text {
+  color: #850000;
+  font-weight: bold;
+}
+
+/* Class to style any of the "[required]" texts to red */
+.required-text {
+  color: #850000;
+}
+
+/* ID for styling the restaurant name (MUGHALS & CO.) in the header */
+#restaurant-name {
+  display: inline;
+  padding: 10px;
+  font-family: "Montserrat Bold";
+  font-size: 24px;
+  color: #dad7cd;
+}
+
+/* ID for styling the text in the footer */
+#footer-text {
+  color: #2d422c;
+  font-size: 16px;
+}
+
+/* ID for the line (hr tag) that divides the footer from the main content */
+#footer-hr {
+  border: 2px solid #588157;
+  width: 99%;
+}
