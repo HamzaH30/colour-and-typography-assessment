@@ -1,5 +1,7 @@
 /* External CSS page */
 
+/* TODO: Remove google fonts and use web-safe fonts */
+
 /* Adding custom fonts */
 @font-face {
   font-family: "Great Wishes";
@@ -18,109 +20,153 @@
   src: url(../fonts/Roboto-Regular.ttf);
 }
 
-/* Default stylying for the body */
+/*
+  Colour palete: https://coolors.co/2d422c-588157-dad7cd-6a9969
+  Primary Colour: #2D422C
+  Secondary Colours: #588157 and #6A9969
+  Neutral Colour: #DAD7CD
+*/
+
+/*
+  This styles the entire website to have 0 pixels of margin and a background colour of #dad7cd.
+*/
 body {
   margin: 0px;
-
   background-color: #dad7cd;
 }
 
-/* Default styling for the header */
+/* 
+  This styles the header to have a background colour of #588157. As well as centering all text in the header.
+*/
 header {
   background-color: #588157;
   text-align: center;
 }
 
-/* Default styling for the navigation menu */
+/*
+  This styles the nav to have 20 pixels of padding only on the top-and-bottom.
+*/
 nav {
   padding: 20px 0px;
 }
 
-/* Default styling for the h1 tag - mainly used at the top of the webpage (ex: About, Contact, Catering) */
+/* 
+  This styles all main headings to have a font colour of #2d422c and have 5 pixels of margin on the bottom. 
+  This styles the headings to be centered, bold, and have a font size of 36 pixels. 
+  The heading text will use the Roboto Slab font family, then Roboto if Roboto Slab doesn't work, and finally
+  sans-serif font as a last resort.
+*/
 h1 {
   color: #2d422c;
+  margin-bottom: 5px;
+
   text-align: center;
   font-size: 36px;
-  font-weight: 700;
-  font-family: "Roboto Slab";
-  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: "Roboto Slab", "Roboto", sans-serif;
 }
 
-/* The default styling for a paragraph tag - main text on the website */
+/* TODO: Change all the fonts, basically do this part all over, including comments about the font */
+
+/*
+  This styles all paragraphs to have a font colour of #2d422c and a font size of 18 pixels.
+  The paragraph text has a padding of 0 pixels top-and-bottom and 70 pixels left-and-right.
+*/
 p {
   color: #2d422c;
   font-size: 18px;
-  font-family: "Roboto";
+  /* TODO: Ask Mr. Hardman if comments need to include a reason of why you did such-and-such thing 
+            Answer: Yes
+  */
   /* This padding is to make sure the paragraph text not start from the edge of the window */
   padding: 0px 70px;
 }
 
-/* Styling for hr tag to be rounded, green, and a solid line underneath every heading of a page */
+/* 
+  This styles all horizontal rules (hr) to have a border that has a line-width of 5 pixels. is solid, and has a colour of #588157.
+  All horizontal rules have a border-radius of 5 pixels (rounded ends). They have a width of 50%. Their margin is auto.
+*/
 hr {
   border: 5px solid #588157;
-  /* Making the ends rounded */
   border-radius: 5px;
-
   width: 50%;
-
-  /* Centering the line */
   margin: auto;
 }
 
-/* Styling the div tag used as a container to style the form */
-div {
-  margin: 0px 70px;
+/*
+  This styles all the text in the form to have a font colour of #2d422c and a font size of 18 pixels.
+  This styles forms to have 10 pixels of margin top-and-bottom and 70 pixels of margin left-and-right.
+*/
+form {
+  margin: 10px 70px;
   color: #2d422c;
   font-size: 18px;
 }
 
-/* Default styling the inputs and the textarea */
+/*
+  This styles all the inputs and textarea. This styles the inputs and textarea to have a width of 100% to make it 
+  the full width of the form it's in. 
+
+  These elements also have a box-sizing property of border-box. This includes padding into the total width of the element. 
+  If it's not added the input will be bigger than the width of the form. Reference: https://www.w3schools.com/css/css3_box-sizing.asp
+  
+  This styling adds a padding of 7 pixels top-and-bottom and 20 pixels left-and-right. It also adds 8 pixels of margin top-and-bottom
+  and no margin left-and-right.
+
+  This styling makes the text have a font-size of 16 pixels. 
+  
+  This styling adds a border that has a line-width of 1 pixel, is solid, and has a border-radius of 5 pixels (rounded corners).
+
+  This styling makes the input and textarea elements have a background colour of #dad7cd.
+*/
 input,
 textarea {
-  /* Making it the full width of the form */
   width: 100%;
-
-  font-size: 17px;
-
-  /* Adding padding within the input */
-  padding: 7px 20px;
-
-  /* Adding margin (spacing) to make it less condensed */
-  margin: 8px 0px;
-
-  /* Including padding into the total width of the element. If it's not added the input will be bigger than the width of the form */
   box-sizing: border-box;
 
-  /* Changing size of border */
+  padding: 7px 20px;
+  margin: 8px 0px;
+
+  font-size: 16px;
+
   border: 1px solid;
-  /* Rounded corners */
   border-radius: 5px;
 
   background-color: #dad7cd;
 }
 
-input[type="radio"] {
-  /* Styling radio buttons to only take up as little width as possible - don't want to stretch the radio buttons */
-  width: min-content;
-}
+/* 
+  This styles all the radio buttons to have a width of min-content, making all the radio buttons take up as little width
+  as possible.
 
+  It also styles all the date inputs to have a width of min-content, making it take as little width as possible thus making it
+  easier for the user to click the calendar icon and select a date
+*/
+input[type="radio"],
 input[type="date"] {
-  /* Styling the date input to make it take as little width as possible, this makes it easier for the user to click the calendar icon and select a date */
   width: min-content;
 }
 
-/* Styling the submit button */
+/*
+  This styles all the submit buttons to have a background colour of #588157 and a font colour of #dad7cd. 
+  It also styles the submit buttons to have a font size of 17 pixels and be bold. The font text will have a Roboto font family, 
+  if that doesn't work then it will use the sans-serif font as a last resort.
+
+  It 
+*/
 input[type="submit"] {
   background-color: #588157;
-  color: white;
+  color: #dad7cd;
+
+  /* TODO: Add letter spacing */
+  font-family: "Roboto", "sans-serif";
+  font-size: 17px;
+  font-weight: bold;
 
   cursor: pointer;
 
   border: none;
   border-radius: 5px;
-
-  font-family: "Roboto";
-  font-size: 16px;
 
   padding: 12px 30px;
   margin-top: 10px;
