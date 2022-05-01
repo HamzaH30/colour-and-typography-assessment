@@ -20,8 +20,9 @@
   src: url(../fonts/Roboto-Regular.ttf);
 }
 
+/* TODO: Give explanation for colour palete */
 /*
-  Colour palete: https://coolors.co/2d422c-588157-dad7cd-6a9969
+  Colour palete: https://coolors.co/2d422c-588157-6a9969-dad7cd
   Primary Colour: #2D422C
   Secondary Colours: #588157 and #6A9969
   Neutral Colour: #DAD7CD
@@ -75,10 +76,6 @@ h1 {
 p {
   color: #2d422c;
   font-size: 18px;
-  /* TODO: Ask Mr. Hardman if comments need to include a reason of why you did such-and-such thing 
-            Answer: Yes
-  */
-  /* This padding is to make sure the paragraph text not start from the edge of the window */
   padding: 0px 70px;
 }
 
@@ -152,7 +149,13 @@ input[type="date"] {
   It also styles the submit buttons to have a font size of 17 pixels and be bold. The font text will have a Roboto font family, 
   if that doesn't work then it will use the sans-serif font as a last resort.
 
-  It 
+  It does not have a border, but has a border-radius of 5 pixels (rounded edges).
+
+  There is 12 pixels of padding top-and-bottom and 30 pixels of padding left-and-right. There is 10 pixels of margin on the top 
+  and 30 pixels of margin on the bottom.
+
+  This styling makes it so that when the cursor is on the submit button, it changes to a pointer. As well as adding a duration of 
+  0.4 seconds for transitions (i.e., change of colour when hovered).
 */
 input[type="submit"] {
   background-color: #588157;
@@ -163,8 +166,6 @@ input[type="submit"] {
   font-size: 17px;
   font-weight: bold;
 
-  cursor: pointer;
-
   border: none;
   border-radius: 5px;
 
@@ -172,62 +173,112 @@ input[type="submit"] {
   margin-top: 10px;
   margin-bottom: 30px;
 
-  /* Duration for transitions (i.e., change of colour when hovered) */
+  cursor: pointer;
   transition-duration: 0.4s;
 }
 
-/* Styling the submit button when hovered */
+/* 
+  This styles the submit button to, when hovered, change background colour to #2d422c.
+*/
 input[type="submit"]:hover {
   background-color: #2d422c;
 }
 
-/* Class for styling the anchor tags in the navigation bar */
+/* 
+  This is a class for styling the anchor tags in the navigation bar.
+
+  It adds a padding of 20 pixels and changes the font colour to #dad7cd.
+
+  It changes the font-size to 20 pixels, an uses a font family of Montserrat Bold, if that doesn't work then it
+  uses sans serif.
+
+  It adds a duration of 0.4 seconds for transitions (i.e., change of colour when hovered).
+*/
 .nav-link {
   padding: 20px;
+
   color: #dad7cd;
-  font-family: "Montserrat Bold";
+
+  /* TODO: Change font family and comments */
+  font-family: "Montserrat Bold", "sans serif";
   font-size: 20px;
+
   /* Length of the transition for when it's hovered */
   transition-duration: 0.4s;
 }
 
-/* Descendant selector to style all list items that are in the nav-link class elements. */
+/* 
+  This is a descendant selector to style all list items that are in the nav-link class elements.
+
+  It styles all the list items in the nav-link class to be inline-blocks.
+*/
 .nav-link li {
   display: inline-block;
 }
 
-/* Styling for when an item in the navigation bar gets hovered */
+/* 
+  This is the styling for when an item in the navigation bar gets hovered.
+
+  It changes the background colour of that item to #6a9969.
+*/
 .nav-link:hover {
   background-color: #6a9969;
 }
 
-/* Class to style the disclaimer text informing user not to submit any personal or sensitive information */
+/* 
+  This is a class to style the disclaimer text informing user not to submit any personal or sensitive information.
+
+  It changes the font colour to #850000 and makes it bold.
+*/
 .disclaimer-text {
   color: #850000;
   font-weight: bold;
 }
 
-/* Class to style any of the "[required]" texts to red */
+/* 
+  This is a class to style the "[required]" texts.
+
+  It changes the font colour to #850000.
+*/
 .required-text {
   color: #850000;
 }
 
-/* ID for styling the restaurant name (MUGHALS & CO.) in the header */
+/* 
+  This is an ID for styling the restaurant name (MUGHALS & CO.) in the header.
+  
+  It makes it an inline element. Adds 10 pixels of padding. Changes the font colour to #dad7cd.
+  It has a font size of 24 pixels. It uses the font family Montserrat Bold, if that doesn't work then
+  it uses the sans serif font.
+*/
 #restaurant-name {
   display: inline;
+
   padding: 10px;
-  font-family: "Montserrat Bold";
+
+  /* TODO: Change font family and comment */
+  font-family: "Montserrat Bold", "sans serif";
   font-size: 24px;
+
   color: #dad7cd;
 }
 
-/* ID for styling the text in the footer */
+/* 
+  This is an ID for styling the text in the footer.
+
+  It has a font colour of #2d422c and a font size of 16 pixels.
+*/
 #footer-text {
   color: #2d422c;
   font-size: 16px;
 }
 
-/* ID for the line (hr tag) that divides the footer from the main content */
+/* 
+  This is an ID for the line (hr tag) that divides the footer from the main content.
+  It has a border with a line-width of 2 pixels, is solid, and a colour of #588157.
+
+  Its width has been set to 99% after experimenting with different values.
+*/
 #footer-hr {
   border: 2px solid #588157;
   width: 99%;
