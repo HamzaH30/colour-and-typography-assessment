@@ -2,24 +2,6 @@
 
 /* TODO: Remove google fonts and use web-safe fonts */
 
-/* Adding custom fonts */
-@font-face {
-  font-family: "Great Wishes";
-  src: url(../fonts/great_wishes-webfont.woff);
-}
-@font-face {
-  font-family: "Montserrat Bold";
-  src: url(../fonts/montserrat-bold-webfont.woff);
-}
-@font-face {
-  font-family: "Roboto Slab";
-  src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.ttf);
-}
-
 /* TODO: Give explanation for colour palete */
 /*
   Colour palete: https://coolors.co/2d422c-588157-6a9969-dad7cd
@@ -54,8 +36,9 @@ nav {
 /* 
   This styles all main headings to have a font colour of #2d422c and have 5 pixels of margin on the bottom. 
   This styles the headings to be centered, bold, and have a font size of 36 pixels. 
-  The heading text will use the Roboto Slab font family, then Roboto if Roboto Slab doesn't work, and finally
-  sans-serif font as a last resort.
+
+  The heading text will use the Didot font family, then Palatino if Didot doesn't work, 
+  then Lucida Bright if Palatino doesn't work, and finally serif font as a last resort.
 */
 h1 {
   color: #2d422c;
@@ -64,18 +47,24 @@ h1 {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  font-family: "Roboto Slab", "Roboto", sans-serif;
+  font-family: Didot, Palatino, "Lucida Bright", serif;
 }
 
 /* TODO: Change all the fonts, basically do this part all over, including comments about the font */
 
 /*
   This styles all paragraphs to have a font colour of #2d422c and a font size of 18 pixels.
+
+  It uses the Cambria font family, if that doesn't work then it uses the Baskerville font family,
+  if that doesn't work then it uses the Garamond font family, if that doesn't work it uses the 
+  Times New Roman font family, and finally it'll use the serif font as a last resort.
+
   The paragraph text has a padding of 0 pixels top-and-bottom and 70 pixels left-and-right.
 */
 p {
   color: #2d422c;
   font-size: 18px;
+  font-family: Cambria, Baskerville, Garamond, "Times New Roman", serif;
   padding: 0px 70px;
 }
 
@@ -146,8 +135,11 @@ input[type="date"] {
 
 /*
   This styles all the submit buttons to have a background colour of #588157 and a font colour of #dad7cd. 
-  It also styles the submit buttons to have a font size of 17 pixels and be bold. The font text will have a Roboto font family, 
-  if that doesn't work then it will use the sans-serif font as a last resort.
+  It also styles the submit buttons to have a font size of 17 pixels and be bold. 
+  
+  It uses the Cambria font family, if that doesn't work then it uses the Baskerville font family,
+  if that doesn't work then it uses the Garamond font family, if that doesn't work it uses the 
+  Times New Roman font family, and finally it'll use the serif font as a last resort.
 
   It does not have a border, but has a border-radius of 5 pixels (rounded edges).
 
@@ -162,7 +154,7 @@ input[type="submit"] {
   color: #dad7cd;
 
   /* TODO: Add letter spacing */
-  font-family: "Roboto", "sans-serif";
+  font-family: Cambria, Baskerville, Garamond, "Times New Roman", serif;
   font-size: 17px;
   font-weight: bold;
 
@@ -189,8 +181,12 @@ input[type="submit"]:hover {
 
   It adds a padding of 20 pixels and changes the font colour to #dad7cd.
 
-  It changes the font-size to 20 pixels, an uses a font family of Montserrat Bold, if that doesn't work then it
-  uses sans serif.
+  It changes the font-size to 20 pixels. 
+
+  It uses the Georgia font family, if that doesn't work it uses the Cambria font family, if that 
+  doesn't work then it uses the Baskerville font family, if that doesn't work then it uses the 
+  Garamond font family, if that doesn't work it uses the Times New Roman font family, and finally
+  it'll use the serif font as a last resort.
 
   It adds a duration of 0.4 seconds for transitions (i.e., change of colour when hovered).
 */
@@ -199,8 +195,7 @@ input[type="submit"]:hover {
 
   color: #dad7cd;
 
-  /* TODO: Change font family and comments */
-  font-family: "Montserrat Bold", "sans serif";
+  font-family: Georgia, Cambria, Baskerville, Garamond, "Times New Roman", serif;
   font-size: 20px;
 
   /* Length of the transition for when it's hovered */
@@ -248,8 +243,11 @@ input[type="submit"]:hover {
   This is an ID for styling the restaurant name (MUGHALS & CO.) in the header.
   
   It makes it an inline element. Adds 10 pixels of padding. Changes the font colour to #dad7cd.
-  It has a font size of 24 pixels. It uses the font family Montserrat Bold, if that doesn't work then
-  it uses the sans serif font.
+  It has a font size of 24 pixels. 
+  
+  It uses the Didot font family, if that doesn't work then it uses the Palatino font family,
+  if that doesn't work then it uses the Lucida Bright font family, and finally it'll use the 
+  serif font as a last resort.
 */
 #restaurant-name {
   display: inline;
@@ -257,7 +255,7 @@ input[type="submit"]:hover {
   padding: 10px;
 
   /* TODO: Change font family and comment */
-  font-family: "Montserrat Bold", "sans serif";
+  font-family: Didot, Palatino, "Lucida Bright", serif;
   font-size: 24px;
 
   color: #dad7cd;
