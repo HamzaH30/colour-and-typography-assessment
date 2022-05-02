@@ -11,23 +11,52 @@
 
     <!-- Internal CSS -->
     <style>
-      /* Styling the images on this page to be centered */
+      /* 
+        This styles the images on this page to be centered by being a block element and having auto margin on the left and right. 
+      */
       img {
         display: block;
         margin-left: auto;
         margin-right: auto;
       }
 
-      /* Styling all the figcaptions on this page to be centered */
+      /* 
+        This styles all the figcaptions on this page to be centered 
+      */
       figcaption {
         text-align: center;
+      }
+
+      /*
+        This is an ID that styles the anchor tag. 
+        
+        It is an inline-block, has a relative position, has a value of 50% for the left property, and has a transform property with a 
+        value of translateX(-50%). This is to center the element on the webpage. 
+
+        It has a background colour of #588157 and a font colour of #dad7cd.
+        It has a font size of 21 pixels, a padding of 10 pixels top-and-bottom and 15 pixels of padding left-and-right.
+        It has 25 pixels of margin on the bottom.
+      */
+      #mughal-wikipedia-link {
+        /* Code added with the assistance of Mr. Hardman */
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        /* End of referenced code */
+
+        background-color: #588157;
+        color: #dad7cd;
+        font-size: 21px;
+        padding: 10px 15px;
+        margin-bottom: 25px;
       }
     </style>
   </head>
   <body>
     <header>
       <!-- Restaurant name -->
-      <h1 id="restaurant-name">Mughals & Co.</h1>
+      <h1 id="restaurant-name">MUGHALS & CO.</h1>
       <!-- Navigation bar -->
       <nav style="display: inline-block">
         <a href="index.html" class="nav-link"><li>Home</li></a>
@@ -62,19 +91,9 @@
         </p>
         <!-- TODO: Change this to internal css or external css if there are more links. -->
         <a
+          id="mughal-wikipedia-link"
           href="https://en.wikipedia.org/wiki/Mughal_Empire"
           target="_blank"
-          style="
-            display: inline-block;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #588157;
-            color: #dad7cd;
-            font-size: 21px;
-            padding: 10px 15px;
-            margin-bottom: 75px;
-          "
         >
           To read more about the Mughal Empire, click this link.
         </a>
