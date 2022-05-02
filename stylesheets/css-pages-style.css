@@ -13,6 +13,14 @@
 */
 
 /*
+  This adds a Google Font. It is used for the "Where Kings Dine" text on the index.html page.
+*/
+@font-face {
+  font-family: "Great Wishes";
+  src: url(../fonts/great_wishes-webfont.woff);
+}
+
+/*
   This styles the entire website to have 0 pixels of margin and a background colour of #dad7cd.
 */
 body {
@@ -39,6 +47,8 @@ nav {
   This styles all main headings to have a font colour of #2d422c and have 5 pixels of margin on the bottom. 
   This styles the headings to be centered, bold, and have a font size of 36 pixels. 
 
+  This styling uppercases the text.
+
   The heading text will use the Didot font family, then Palatino if Didot doesn't work, 
   then Lucida Bright if Palatino doesn't work, and finally serif font as a last resort.
 */
@@ -46,6 +56,7 @@ h1 {
   color: #2d422c;
   margin-bottom: 5px;
 
+  text-transform: uppercase;
   text-align: center;
   font-size: 36px;
   font-weight: bold;
@@ -101,7 +112,11 @@ form {
   This styling adds a padding of 7 pixels top-and-bottom and 20 pixels left-and-right. It also adds 8 pixels of margin top-and-bottom
   and no margin left-and-right.
 
-  This styling makes the text have a font-size of 16 pixels. 
+  This styling makes the text have a font-size of 18 pixels. It has a font colour of #2d422c.
+
+  It uses the Cambria font family, if that doesn't work then it uses the Baskerville font family,
+  if that doesn't work then it uses the Garamond font family, if that doesn't work it uses the 
+  Times New Roman font family, and finally it'll use the serif font as a last resort.
   
   This styling adds a border that has a line-width of 1 pixel, is solid, and has a border-radius of 5 pixels (rounded corners).
 
@@ -115,7 +130,9 @@ textarea {
   padding: 7px 20px;
   margin: 8px 0px;
 
-  font-size: 16px;
+  font-size: 18px;
+  font-family: Cambria, Baskerville, Garamond, "Times New Roman", serif;
+  color: #2d422c;
 
   border: 1px solid;
   border-radius: 5px;
@@ -137,7 +154,7 @@ input[type="date"] {
 
 /*
   This styles all the submit buttons to have a background colour of #588157 and a font colour of #dad7cd. 
-  It also styles the submit buttons to have a font size of 17 pixels and be bold. 
+  It also styles the submit buttons to have a font size of 18 pixels and be bold. 
   
   It uses the Cambria font family, if that doesn't work then it uses the Baskerville font family,
   if that doesn't work then it uses the Garamond font family, if that doesn't work it uses the 
@@ -157,7 +174,7 @@ input[type="submit"] {
 
   /* TODO: Add letter spacing */
   font-family: Cambria, Baskerville, Garamond, "Times New Roman", serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
 
   border: none;
@@ -183,12 +200,14 @@ input[type="submit"]:hover {
 
   It adds a padding of 20 pixels and changes the font colour to #dad7cd.
 
-  It changes the font-size to 20 pixels. 
+  It changes the font-size to 21 pixels. 
 
   It uses the Georgia font family, if that doesn't work it uses the Cambria font family, if that 
   doesn't work then it uses the Baskerville font family, if that doesn't work then it uses the 
   Garamond font family, if that doesn't work it uses the Times New Roman font family, and finally
   it'll use the serif font as a last resort.
+
+  This styling uppercases the text.
 
   It adds a duration of 0.4 seconds for transitions (i.e., change of colour when hovered).
 */
@@ -198,7 +217,9 @@ input[type="submit"]:hover {
   color: #dad7cd;
 
   font-family: Georgia, Cambria, Baskerville, Garamond, "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 21px;
+
+  text-transform: uppercase;
 
   /* Length of the transition for when it's hovered */
   transition-duration: 0.4s;
@@ -250,6 +271,8 @@ input[type="submit"]:hover {
   It uses the Didot font family, if that doesn't work then it uses the Palatino font family,
   if that doesn't work then it uses the Lucida Bright font family, and finally it'll use the 
   serif font as a last resort.
+
+  It uppercases the text.
 */
 #restaurant-name {
   display: inline;
@@ -260,17 +283,19 @@ input[type="submit"]:hover {
   font-family: Didot, Palatino, "Lucida Bright", serif;
   font-size: 24px;
 
+  text-transform: uppercase;
+
   color: #dad7cd;
 }
 
 /* 
   This is an ID for styling the text in the footer.
 
-  It has a font colour of #2d422c and a font size of 16 pixels.
+  It has a font colour of #2d422c and a font size of 18 pixels.
 */
 #footer-text {
   color: #2d422c;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* 

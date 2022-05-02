@@ -39,8 +39,8 @@
       }
       main {
         /* 
-        * The following lines of code are referenced from https://www.w3.org/Style/Examples/007/center.en.html. 
-        * It helps position the green background in the center
+         The following lines of code are referenced from https://www.w3.org/Style/Examples/007/center.en.html. 
+         It helps position the green background in the center
         */
         position: absolute;
         top: 50%;
@@ -55,18 +55,35 @@
       }
 
       /* TODO: Fix fonts, use the transform attribute to capitalize text */
-      /* Styling the h1 tag that says: "MUGHALS & CO." */
+      /* 
+        This styles the h1 tag that says: "MUGHALS & CO."
+
+        It uses the Georgia font family, if that doesn't work it uses the Times font family,
+        if that doesn't work it uses the Times New Roman font, and finally it uses the serif font
+        as a last resort. 
+
+        It has a font size of 110 pixels. Has 30 pixels of margin. Has a font colour of #dad7cd.
+      */
       h1 {
         margin: 30px;
         font-size: 110px;
-        font-family: "Montserrat Bold";
+        font-family: Georgia, Times, "Times New Roman", serif;
         color: #dad7cd;
       }
-      /* Styling the h2 tag that says: "Where Kings Dine" */
+
+      /* 
+        This styles the h2 tag that says: "Where Kings Dine".
+
+        It has 15 pixels of margin. Has a font size of 48 pixels. Has a font colour of #dad7cd.
+
+        It uses the Great Wishes font family, if that doesn't work it uses the Didot font family,
+        if that doesn't work it uses the Times New Roman font, if that doesn't work it uses the 
+        Times font, and finally it will use the serif font as a last resort. 
+      */
       h2 {
         margin: 15px;
         font-size: 48px;
-        font-family: "Great Wishes";
+        font-family: "Great Wishes", Didot, "Times New Roman", Times, serif;
         color: #dad7cd;
       }
     </style>
@@ -77,10 +94,10 @@
       <h1 id="restaurant-name">MUGHALS & CO.</h1>
       <!-- Navigation bar -->
       <nav style="display: inline-block">
-        <a href="index.html" class="nav-link"><li>HOME</li></a>
-        <a href="about.html" class="nav-link"><li>ABOUT</li></a>
-        <a href="catering.html" class="nav-link"><li>CATERING</li></a>
-        <a href="contact.html" class="nav-link"><li>CONTACT</li></a>
+        <a href="index.html" class="nav-link"><li>Home</li></a>
+        <a href="about.html" class="nav-link"><li>About</li></a>
+        <a href="catering.html" class="nav-link"><li>Catering</li></a>
+        <a href="contact.html" class="nav-link"><li>Contact</li></a>
       </nav>
     </header>
 
