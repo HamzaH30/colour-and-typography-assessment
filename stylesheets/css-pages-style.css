@@ -261,11 +261,13 @@ input[type="submit"]:hover {
 }
 
 /* 
-  This is the styling for when an item in the navigation bar gets hovered.
+  This is the styling for when an item in the navigation bar gets hovered and when it's being focused
+  with the tab key.
 
   It changes the background colour of that item to #6a9969.
 */
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   background-color: #6a9969;
 }
 
