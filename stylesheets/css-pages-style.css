@@ -85,8 +85,6 @@ h1 {
   font-family: Didot, Palatino, "Lucida Bright", serif;
 }
 
-/* TODO: Change all the fonts, basically do this part all over, including comments about the font */
-
 /*
   This styles all paragraphs to have a font colour of #2d422c and a font size of 18 pixels.
 
@@ -196,7 +194,6 @@ input[type="submit"] {
   background-color: #588157;
   color: #dad7cd;
 
-  /* TODO: Add letter spacing */
   font-family: Cambria, Baskerville, Garamond, "Times New Roman", serif;
   font-size: 18px;
   font-weight: bold;
@@ -307,7 +304,6 @@ input[type="submit"]:hover {
 
   padding: 10px;
 
-  /* TODO: Change font family and comment */
   font-family: Didot, Palatino, "Lucida Bright", serif;
   font-size: 24px;
 
