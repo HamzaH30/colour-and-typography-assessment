@@ -125,6 +125,14 @@ form {
 }
 
 /*
+  This styles the legends of the fieldsets to be bolded in order to emphasize and draw the user's attention
+  to the forms.
+*/
+legend {
+  font-weight: bold;
+}
+
+/*
   This styles all the inputs and textarea. This styles the inputs and textarea to have a width of 100% to make it 
   the full width of the form it's in. 
 
