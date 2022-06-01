@@ -120,7 +120,7 @@ hr {
 */
 form {
   margin: 10px 70px;
-  color: #2d422c;
+  color: #2d442c;
   font-size: 18px;
 }
 
@@ -130,6 +130,15 @@ form {
 */
 legend {
   font-weight: bold;
+}
+
+/* 
+  This styles the labels of the forms to be inline-block and have 15 pixels of margin on the top. This is to ensure
+  there is enough spacing between all the elements inside the form, and to group related labels and inputs together.
+*/
+label {
+  display: inline-block;
+  margin-top: 15px;
 }
 
 /*

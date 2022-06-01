@@ -11,8 +11,13 @@
 
     <!-- Internal CSS -->
     <style>
-      /* 
-        This styles the images on this page to be centered by being a block element and having auto margin on the left and right. 
+      /* This styles the figures to have 20 pixels of padding top-and-bottom. 0 pixels of padding left-and-right */
+      figure {
+        padding: 20px 0px;
+      }
+
+      /*
+        This styles the images on this page to be centered by being a block element and having auto margin on the left and right.
       */
       img {
         display: block;
@@ -20,22 +25,23 @@
         margin-right: auto;
       }
 
-      /* 
-        This styles all the figcaptions on this page to be centered 
+      /*
+        This styles all the figcaptions on this page to be centered and have a font size of 18 pixels.
       */
       figcaption {
         text-align: center;
+        font-size: 18px;
       }
 
       /*
-        This is an ID that styles the anchor tag. 
-        
-        It is an inline-block, has a relative position, has a value of 50% for the left property, and has a transform property with a 
-        value of translateX(-50%). This is to center the element on the webpage. 
+        This is an ID that styles the anchor tag.
+
+        It is an inline-block, has a relative position, has a value of 50% for the left property, and has a transform property with a
+        value of translateX(-50%). This is to center the element on the webpage.
 
         It has a background colour of #588157 and a font colour of #dad7cd.
         It has a font size of 21 pixels, a padding of 10 pixels top-and-bottom and 15 pixels of padding left-and-right.
-        It has 25 pixels of margin on the bottom.
+        It has 62 pixels of margin on the top & bottom.
       */
       #mughal-wikipedia-link {
         /* Code added with the assistance of Mr. Hardman */
@@ -49,7 +55,15 @@
         color: #dad7cd;
         font-size: 21px;
         padding: 10px 15px;
-        margin-bottom: 25px;
+        margin: 62px 0px;
+      }
+
+      /* 
+        This is an ID that styles the div surrounding the two images. In order to add sufficient spacing between the 
+        images and the main text, this styles the div to have 75 pixels of margin on the top and 50 pixels of margin on the bottom. 
+      */
+      #food-pics {
+        margin: 75px 0px 50px;
       }
     </style>
   </head>
@@ -113,27 +127,29 @@
           butter, milk, and cream. The traditional Mughlai desserts are
           elegantly spiced with saffron, cardamom, and cinnamon.
         </p>
-        <!-- 2 pictures showing Mughlai/Indian food. -->
-        <figure>
-          <img
-            src="images/mughal-cuisine-1.jpg"
-            alt="A picture showing a display of Mughlai dishes. Photo Credit: Taste Pak."
-          />
-          <figcaption>
-            A picture showing a display of Mughlai food. Photo Credit: Taste
-            Pak.
-          </figcaption>
-        </figure>
+        <!-- 2 pictures showing Mughlai/Indian food. Using a div to group the images and apply styling. -->
+        <div id="food-pics">
+          <figure>
+            <img
+              src="images/mughal-cuisine-1.jpg"
+              alt="A picture showing a display of Mughlai dishes. Photo Credit: Taste Pak."
+            />
+            <figcaption>
+              A picture showing a display of Mughlai food. Photo Credit: Taste
+              Pak.
+            </figcaption>
+          </figure>
 
-        <figure>
-          <img
-            src="images/mughal-cuisine-2.jpg"
-            alt="A picture of a Mughlai dish on display. Photo Credit: Taste Pak."
-          />
-          <figcaption>
-            A picture showing a Mughlai dish. Photo Credit: Taste Pak.
-          </figcaption>
-        </figure>
+          <figure>
+            <img
+              src="images/mughal-cuisine-2.jpg"
+              alt="A picture of a Mughlai dish on display. Photo Credit: Taste Pak."
+            />
+            <figcaption>
+              A picture showing a Mughlai dish. Photo Credit: Taste Pak.
+            </figcaption>
+          </figure>
+        </div>
       </section>
     </main>
 
